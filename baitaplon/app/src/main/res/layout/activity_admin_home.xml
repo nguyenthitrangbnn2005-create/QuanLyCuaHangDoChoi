@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5F8">
+
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/gradient_admin_header"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/toylogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOY STORE"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bảng điều khiển Admin"
+            android:textColor="#FCE4EC"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <!-- THỐNG KÊ NHANH -->
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:layout_marginBottom="16dp">
+
+                <!-- Sản phẩm -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FCE4EC">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📦"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtSoSP"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FF6B9D" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sản phẩm"
+                            android:textSize="11sp"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Khách hàng -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#E3F2FD">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👥"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtSoKH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#1565C0" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Khách hàng"
+                            android:textSize="11sp"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <!-- Đơn hàng -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    app:cardBackgroundColor="#FFF3E0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🧾"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtSoDon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#E65100" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đơn hàng"
+                            android:textSize="11sp"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+            <!-- TIÊU ĐỀ CHỨC NĂNG -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚙️ Chức năng quản lý"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#1A1A1A"
+                android:layout_marginBottom="10dp" />
+
+            <!-- Quản lý sản phẩm -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDanhSach"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView android:text="📦" android:textSize="24sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp">
+                        <TextView android:text="Quản lý sản phẩm"
+                            android:textSize="16sp" android:textStyle="bold"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Thêm • Sửa • Xoá sản phẩm"
+                            android:textSize="11sp" android:textColor="#AAAAAA"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:text="›" android:textSize="24sp" android:textColor="#AAAAAA"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Đơn hàng -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDonHang"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView android:text="🧾" android:textSize="24sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Quản lý đơn hàng" android:textSize="16sp"
+                        android:textStyle="bold" android:paddingStart="14dp"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView android:text="›" android:textSize="24sp" android:textColor="#AAAAAA"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Thống kê -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardThongKe"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView android:text="📈" android:textSize="24sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <TextView android:text="Thống kê doanh thu" android:textSize="16sp"
+                        android:textStyle="bold" android:paddingStart="14dp"
+                        android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1"/>
+                    <TextView android:text="›" android:textSize="24sp" android:textColor="#AAAAAA"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Chăm sóc khách hàng -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardChamSoc"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="3dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp">
+
+                    <TextView android:text="💬" android:textSize="24sp"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="14dp">
+                        <TextView android:text="Chăm sóc khách hàng"
+                            android:textSize="16sp" android:textStyle="bold"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <TextView android:text="Khách hàng • Thông báo • Lịch sử đơn"
+                            android:textSize="11sp" android:textColor="#AAAAAA"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView android:text="›" android:textSize="24sp" android:textColor="#AAAAAA"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Đăng xuất -->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="🚪  Đăng xuất"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E53935"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
